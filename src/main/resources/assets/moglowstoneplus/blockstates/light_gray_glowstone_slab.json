@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "moglowstoneplus:block/light_gray_glowstone_slab" },
+    "type=top": { "model": "moglowstoneplus:block/light_gray_glowstone_slab_top" },
+    "type=double": { "model": "moglowstoneplus:block/light_gray_glowstone" }
+  }
+}

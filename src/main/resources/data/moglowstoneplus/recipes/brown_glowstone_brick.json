@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GG",
+    "GG"
+  ],
+  "key": {
+    "G": {
+      "item": "moglowstone:brown_gsblock"
+    }
+  },
+  "result": {
+    "item": "moglowstoneplus:brown_glowstone_brick",
+    "count": 4
+  }
+}

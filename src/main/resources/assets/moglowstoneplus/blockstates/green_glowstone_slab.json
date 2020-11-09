@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "moglowstoneplus:block/green_glowstone_slab" },
+    "type=top": { "model": "moglowstoneplus:block/green_glowstone_slab_top" },
+    "type=double": { "model": "moglowstoneplus:block/green_glowstone" }
+  }
+}

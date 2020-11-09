@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "item": "moglowstone:purple_gsblock"
+    }
+  },
+  "result": {
+    "item": "moglowstoneplus:purple_glowstone_slab",
+    "count": 6
+  }
+}
