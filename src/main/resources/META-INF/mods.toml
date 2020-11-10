@@ -2,9 +2,9 @@ modLoader="javafml" #mandatory
 
 loaderVersion="[34,)" #mandatory
 
-license="All rights reserved"
+license="MIT License"
 
-issueTrackerURL="https://www.curseforge.com/minecraft/mc-mods/mo-glowstone-plus/issues" #optional
+issueTrackerURL="https://github.com/allkillernofill3r/MoGlowstonePlus/issues" #optional
 
 [[mods]] #mandatory
 
