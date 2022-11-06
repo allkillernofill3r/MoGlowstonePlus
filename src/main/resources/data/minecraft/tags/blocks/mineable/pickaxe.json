@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "moglowstoneplus:white_glowstone_brick",
+	"moglowstoneplus:orange_glowstone_brick",
+	"moglowstoneplus:magenta_glowstone_brick",
+	"moglowstoneplus:light_blue_glowstone_brick",
+	"moglowstoneplus:lime_glowstone_brick",
+	"moglowstoneplus:pink_glowstone_brick",
+	"moglowstoneplus:gray_glowstone_brick",
+	"moglowstoneplus:light_gray_glowstone_brick",
+	"moglowstoneplus:cyan_glowstone_brick",
+	"moglowstoneplus:purple_glowstone_brick",
+	"moglowstoneplus:blue_glowstone_brick",
+	"moglowstoneplus:brown_glowstone_brick",
+	"moglowstoneplus:green_glowstone_brick",
+	"moglowstoneplus:red_glowstone_brick",
+	"moglowstoneplus:black_glowstone_brick"
+  ]
+}
