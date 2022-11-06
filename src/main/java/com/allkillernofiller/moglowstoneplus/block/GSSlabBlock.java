@@ -1,18 +1,18 @@
 package com.allkillernofiller.moglowstoneplus.block;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraftforge.common.ToolType;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.material.Material;
 
 public class GSSlabBlock extends SlabBlock {
     public GSSlabBlock() {
-        super(Block.Properties.create(Material.GLASS)
+        super(Block.Properties.of(Material.GLASS)
                 .sound(SoundType.GLASS)
-                .hardnessAndResistance(0.3f)
-                .harvestTool(ToolType.PICKAXE)
-                .setLightLevel((bstate) -> 15)
+                .strength(0.3f)
+                .lightLevel((p_50755_) -> {
+				      return 15;
+				   })
         );
     }
 }
