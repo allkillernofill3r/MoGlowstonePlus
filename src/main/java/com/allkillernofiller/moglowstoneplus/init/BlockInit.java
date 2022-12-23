@@ -4,6 +4,7 @@ import com.allkillernofiller.moglowstoneplus.MoGlowstonePlus;
 import com.allkillernofiller.moglowstoneplus.block.GSBrick;
 import com.allkillernofiller.moglowstoneplus.block.GSSlabBlock;
 import com.allkillernofiller.moglowstoneplus.item.BlockItemCreativeTab;
+import com.themastergeneral.moglowstone.blocks.ModBlocks;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
