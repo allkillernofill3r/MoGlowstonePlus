@@ -4,14 +4,15 @@ import com.allkillernofiller.moglowstoneplus.MoGlowstonePlus;
 import com.allkillernofiller.moglowstoneplus.block.GSBrick;
 import com.allkillernofiller.moglowstoneplus.block.GSSlabBlock;
 import com.allkillernofiller.moglowstoneplus.item.BlockItemCreativeTab;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.item.Item;
-import net.minecraftforge.fml.RegistryObject;
+
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 public class BlockInit {
     public static DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MoGlowstonePlus.MOD_ID);
@@ -22,7 +23,7 @@ public class BlockInit {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
-    public static final RegistryObject<SlabBlock> GLOWSTONE_SLAB = BLOCKS.register("glowstone_slab", () -> new SlabBlock(Block.Properties.from(Blocks.GLOWSTONE)));
+    public static final RegistryObject<SlabBlock> GLOWSTONE_SLAB = BLOCKS.register("glowstone_slab", () -> new SlabBlock(Block.Properties.copy(Blocks.GLOWSTONE)));
     public static final RegistryObject<SlabBlock> WHITE_GLOWSTONE_SLAB = BLOCKS.register("white_glowstone_slab", GSSlabBlock::new);
     public static final RegistryObject<SlabBlock> ORANGE_GLOWSTONE_SLAB = BLOCKS.register("orange_glowstone_slab", GSSlabBlock::new);
     public static final RegistryObject<SlabBlock> MAGENTA_GLOWSTONE_SLAB = BLOCKS.register("magenta_glowstone_slab", GSSlabBlock::new);
