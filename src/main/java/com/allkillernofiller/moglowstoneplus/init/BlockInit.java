@@ -4,16 +4,15 @@ import com.allkillernofiller.moglowstoneplus.MoGlowstonePlus;
 import com.allkillernofiller.moglowstoneplus.block.GSBrick;
 import com.allkillernofiller.moglowstoneplus.block.GSSlabBlock;
 import com.allkillernofiller.moglowstoneplus.item.BlockItemCreativeTab;
-import com.themastergeneral.moglowstone.blocks.ModBlocks;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 public class BlockInit {
     public static DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MoGlowstonePlus.MOD_ID);
