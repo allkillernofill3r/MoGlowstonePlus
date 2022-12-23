@@ -1,16 +1,16 @@
-modLoader="javafml" #mandatory
-loaderVersion="[37,)" #mandatory
+modLoader="javafml"
+loaderVersion="[40,)" 
 license="MIT License"
-issueTrackerURL="https://github.com/allkillernofill3r/MoGlowstonePlus/issues" #optional
+issueTrackerURL="https://github.com/allkillernofill3r/MoGlowstonePlus/issues"
 
-[[mods]] #mandatory
-modId="moglowstoneplus" #mandatory
-version="1.0.0" #mandatory
-displayName="Mo' Glowstone Plus" #mandatory
-displayURL="https://www.curseforge.com/minecraft/mc-mods/mo-glowstone-plus" #optional
-logoFile="moglowstoneplus_logo.png" #optional
-credits="Thanks to MasterGeneral156 for letting me make the addon!" #optional
-authors="allkillernofiller (Killer_Playz)" #optional
+[[mods]]
+modId="moglowstoneplus"
+version="1.0.0"
+displayName="Mo' Glowstone Plus"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/mo-glowstone-plus"
+logoFile="moglowstoneplus_logo.png"
+credits="Thanks to MasterGeneral156 for letting me make the addon!"
+authors="allkillernofiller (Killer_Playz)"
 description='''
 An addon for Mo' Glowstone that adds more colorful glowstone items!
 '''

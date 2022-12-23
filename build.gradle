@@ -25,7 +25,7 @@ version = project.property('mc_version') + "-" + project.property('mod_version')
 group = 'com.allkillernofiller.moglowstoneplus' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = project.property('mod_name')
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(16)
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 
