@@ -1,11 +1,11 @@
 modLoader="javafml"
-loaderVersion="[40,)" 
+loaderVersion="[45,)" 
 license="MIT License"
 issueTrackerURL="https://github.com/allkillernofill3r/MoGlowstonePlus/issues"
 
 [[mods]]
 modId="moglowstoneplus"
-version="1.0.0"
+version="1.0.1"
 displayName="Mo' Glowstone Plus"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/mo-glowstone-plus"
 logoFile="moglowstoneplus_logo.png"
@@ -18,13 +18,13 @@ An addon for Mo' Glowstone that adds more colorful glowstone items!
 [[dependencies.moglowstoneplus]]
     modId="ctdcore"
     mandatory=true
-    versionRange="[2.1,)"
+    versionRange="[2.2,)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.moglowstoneplus]]
     modId="moglowstone"
     mandatory=true
-    versionRange="[2.1,)"
+    versionRange="[2.2,)"
     ordering="NONE"
     side="BOTH"
