@@ -1,10 +1,10 @@
 package com.allkillernofiller.moglowstoneplus;
 
 import com.allkillernofiller.moglowstoneplus.init.BlockInit;
-import com.themastergeneral.moglowstone.MoGlowstone;
+import com.themastergeneral.moglowstone.TabRegistry;
 
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -26,9 +26,9 @@ public class MoGlowstonePlus {
         MinecraftForge.EVENT_BUS.register(this);
     }
     
-    private void fillTab(CreativeModeTabEvent.BuildContents ev)
+    private void fillTab(BuildCreativeModeTabContentsEvent ev)
 	{
-		if (ev.getTab() == MoGlowstone.MoGlowstoneTab)
+		if (ev.getTab() == TabRegistry.MOGLOWSTONE_TAB.get())
 		{
 			ev.accept(BlockInit.BLACK_GLOWSTONE_BRICK_ITEM);
 			ev.accept(BlockInit.BLACK_GLOWSTONE_SLAB_ITEM);
