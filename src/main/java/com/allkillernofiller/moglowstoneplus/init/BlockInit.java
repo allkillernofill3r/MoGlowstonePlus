@@ -4,14 +4,15 @@ import com.allkillernofiller.moglowstoneplus.MoGlowstonePlus;
 import com.allkillernofiller.moglowstoneplus.block.GSBrick;
 import com.allkillernofiller.moglowstoneplus.block.GSSlabBlock;
 import com.allkillernofiller.moglowstoneplus.item.BlockItemCreativeTab;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.item.Item;
-import net.minecraftforge.fml.RegistryObject;
+
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 public class BlockInit {
     public static DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MoGlowstonePlus.MOD_ID);
@@ -22,7 +23,12 @@ public class BlockInit {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
-    public static final RegistryObject<SlabBlock> GLOWSTONE_SLAB = BLOCKS.register("glowstone_slab", () -> new SlabBlock(Block.Properties.from(Blocks.GLOWSTONE)));
+    /**
+     * Mod Blocks
+     */
+    //slab block
+    //TODO Maybe add normal slabs for glowstone?
+    public static final RegistryObject<SlabBlock> GLOWSTONE_SLAB = BLOCKS.register("glowstone_slab", () -> new SlabBlock(Block.Properties.copy(Blocks.GLOWSTONE)));
     public static final RegistryObject<SlabBlock> WHITE_GLOWSTONE_SLAB = BLOCKS.register("white_glowstone_slab", GSSlabBlock::new);
     public static final RegistryObject<SlabBlock> ORANGE_GLOWSTONE_SLAB = BLOCKS.register("orange_glowstone_slab", GSSlabBlock::new);
     public static final RegistryObject<SlabBlock> MAGENTA_GLOWSTONE_SLAB = BLOCKS.register("magenta_glowstone_slab", GSSlabBlock::new);
@@ -38,6 +44,7 @@ public class BlockInit {
     public static final RegistryObject<SlabBlock> GREEN_GLOWSTONE_SLAB = BLOCKS.register("green_glowstone_slab", GSSlabBlock::new);
     public static final RegistryObject<SlabBlock> RED_GLOWSTONE_SLAB = BLOCKS.register("red_glowstone_slab", GSSlabBlock::new);
     public static final RegistryObject<SlabBlock> BLACK_GLOWSTONE_SLAB = BLOCKS.register("black_glowstone_slab", GSSlabBlock::new);
+    //brick block
     public static final RegistryObject<Block> WHITE_GLOWSTONE_BRICK = BLOCKS.register("white_glowstone_brick", GSBrick::new);
     public static final RegistryObject<Block> ORANGE_GLOWSTONE_BRICK = BLOCKS.register("orange_glowstone_brick", GSBrick::new);
     public static final RegistryObject<Block> MAGENTA_GLOWSTONE_BRICK = BLOCKS.register("magenta_glowstone_brick", GSBrick::new);
@@ -54,7 +61,10 @@ public class BlockInit {
     public static final RegistryObject<Block> RED_GLOWSTONE_BRICK = BLOCKS.register("red_glowstone_brick", GSBrick::new);
     public static final RegistryObject<Block> BLACK_GLOWSTONE_BRICK = BLOCKS.register("black_glowstone_brick", GSBrick::new);
 
-
+    /**
+     * Mod Items
+     */
+    //slab items
     public static final RegistryObject<Item> GLOWSTONE_SLAB_ITEM = ITEMS.register("glowstone_slab", () -> new BlockItemCreativeTab(GLOWSTONE_SLAB.get()));
     public static final RegistryObject<Item> WHITE_GLOWSTONE_SLAB_ITEM = ITEMS.register("white_glowstone_slab", () -> new BlockItemCreativeTab(WHITE_GLOWSTONE_SLAB.get()));
     public static final RegistryObject<Item> ORANGE_GLOWSTONE_SLAB_ITEM = ITEMS.register("orange_glowstone_slab", () -> new BlockItemCreativeTab(ORANGE_GLOWSTONE_SLAB.get()));
@@ -71,6 +81,7 @@ public class BlockInit {
     public static final RegistryObject<Item> GREEN_GLOWSTONE_SLAB_ITEM = ITEMS.register("green_glowstone_slab", () -> new BlockItemCreativeTab(GREEN_GLOWSTONE_SLAB.get()));
     public static final RegistryObject<Item> RED_GLOWSTONE_SLAB_ITEM = ITEMS.register("red_glowstone_slab", () -> new BlockItemCreativeTab(RED_GLOWSTONE_SLAB.get()));
     public static final RegistryObject<Item> BLACK_GLOWSTONE_SLAB_ITEM = ITEMS.register("black_glowstone_slab", () -> new BlockItemCreativeTab(BLACK_GLOWSTONE_SLAB.get()));
+    //brick items
     public static final RegistryObject<Item> WHITE_GLOWSTONE_BRICK_ITEM = ITEMS.register("white_glowstone_brick", () -> new BlockItemCreativeTab(WHITE_GLOWSTONE_BRICK.get()));
     public static final RegistryObject<Item> ORANGE_GLOWSTONE_BRICK_ITEM = ITEMS.register("orange_glowstone_brick", () -> new BlockItemCreativeTab(ORANGE_GLOWSTONE_BRICK.get()));
     public static final RegistryObject<Item> MAGENTA_GLOWSTONE_BRICK_ITEM = ITEMS.register("magenta_glowstone_brick", () -> new BlockItemCreativeTab(MAGENTA_GLOWSTONE_BRICK.get()));
@@ -83,6 +94,7 @@ public class BlockInit {
     public static final RegistryObject<Item> PURPLE_GLOWSTONE_BRICK_ITEM = ITEMS.register("purple_glowstone_brick", () -> new BlockItemCreativeTab(PURPLE_GLOWSTONE_BRICK.get()));
     public static final RegistryObject<Item> BLUE_GLOWSTONE_BRICK_ITEM = ITEMS.register("blue_glowstone_brick", () -> new BlockItemCreativeTab(BLUE_GLOWSTONE_BRICK.get()));
     public static final RegistryObject<Item> GREEN_GLOWSTONE_BRICK_ITEM = ITEMS.register("green_glowstone_brick", () -> new BlockItemCreativeTab(GREEN_GLOWSTONE_BRICK.get()));
+    public static final RegistryObject<Item> BROWN_GLOWSTONE_BRICK_ITEM = ITEMS.register("brown_glowstone_brick", () -> new BlockItemCreativeTab(BROWN_GLOWSTONE_BRICK.get()));
     public static final RegistryObject<Item> RED_GLOWSTONE_BRICK_ITEM = ITEMS.register("red_glowstone_brick", () -> new BlockItemCreativeTab(RED_GLOWSTONE_BRICK.get()));
     public static final RegistryObject<Item> BLACK_GLOWSTONE_BRICK_ITEM = ITEMS.register("black_glowstone_brick", () -> new BlockItemCreativeTab(BLACK_GLOWSTONE_BRICK.get()));
 }
