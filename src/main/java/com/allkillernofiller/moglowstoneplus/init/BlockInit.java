@@ -28,7 +28,7 @@ public class BlockInit {
      */
     //slab block
     //TODO Maybe add normal slabs for glowstone?
-    public static final RegistryObject<SlabBlock> GLOWSTONE_SLAB = BLOCKS.register("glowstone_slab", () -> new SlabBlock(Block.Properties.copy(Blocks.GLOWSTONE)));
+    public static final RegistryObject<SlabBlock> GLOWSTONE_SLAB = BLOCKS.register("glowstone_slab", () -> new SlabBlock(Block.Properties.ofFullCopy(Blocks.GLOWSTONE)));
     public static final RegistryObject<SlabBlock> WHITE_GLOWSTONE_SLAB = BLOCKS.register("white_glowstone_slab", GSSlabBlock::new);
     public static final RegistryObject<SlabBlock> ORANGE_GLOWSTONE_SLAB = BLOCKS.register("orange_glowstone_slab", GSSlabBlock::new);
     public static final RegistryObject<SlabBlock> MAGENTA_GLOWSTONE_SLAB = BLOCKS.register("magenta_glowstone_slab", GSSlabBlock::new);
